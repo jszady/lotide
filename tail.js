@@ -13,10 +13,11 @@ const tail = function(arr) {
     tailArr[i - 1] = arr[i];
 
   }
-  console.log(tailArr);
+  return tailArr;
 };
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
+console.log(tail(words)); // no need to capture the return value since we are not checking it
 console.log(words.length);
-assertEqual(words.length, 3);
+console.log(assertEqual(tail(words).length, words.length - 1));
+console.log(assertEqual(words.length, 3));
