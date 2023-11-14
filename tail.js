@@ -18,6 +18,8 @@ const tail = function(arr) {
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 console.log(tail(words)); // no need to capture the return value since we are not checking it
+console.log(tail([]));
+console.log(tail(["hello"]));
 console.log(words.length);
-console.log(assertEqual(tail(words).length, words.length - 1));
-console.log(assertEqual(words.length, 3));
+assertEqual(tail(words).length, words.length - 1);
+assertEqual(words.length, 3);
