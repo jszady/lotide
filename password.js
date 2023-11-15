@@ -1,10 +1,6 @@
 const passwordArray = process.argv[2].split("");
 
 const passwordGen = function(password) {
-
-  if(passwordArray.length > 2){
-    return "to many args";
-  }
   for (let i = 0; i < password.length; i++) {
     if(password[i] === "a") {
       password[i] = '4';
