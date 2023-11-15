@@ -27,23 +27,18 @@ const eqArrays = function(arr1, arr2)
 
 const flatten = function (arr)
 {
-  let nonNestedArray = [];
-  let nestedArray = [];
+  let newArr = [];
 
   for (let i = 0; i < arr.length; i++)
   {
-    //console.log(typeof(arr[i]));
-    if(typeof(arr[i]) === "number")
+    if(Array.isArray(arr[i]))
     {
-      nonNestedArray.push(arr[i]);
-    } 
-    if(typeof(arr[i]) === "object")
-    {
-      nestedArray = nestedArray.concat(arr[i]);
+      newArr = newArr.concat(arr[i]);
+    } else {
+      newArr.push(arr[i]);
     }
   }
-  const combinedArray = nonNestedArray.concat(nestedArray).sort((a,b) => a-b);
-  console.log(combinedArray);
+  console.log(newArr);
 };
 
 flatten([1,2,3,[4,5],6]);
