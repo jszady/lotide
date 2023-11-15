@@ -12,17 +12,16 @@ const countLetters = function (string)
 
   for (const letter of string)
   {
-    if(letter !== " "){
+    if(letter !== " ")
+    {
       if(!result[letter])
       {
         result[letter] = 1;
-      }
-      else 
-      {
+      }else {
         result[letter] += 1;
       }
+    }
   }
-}
   return result;
 };
 
