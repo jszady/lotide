@@ -5,6 +5,21 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
+const eqArrays = function(arr1, arr2)
+{
+  if(arr1.length !== arr2.length)
+  {
+    return false;
+  }
+  for(let i = 0; i < arr1.length; i++)
+  {
+    if(arr1[i] !== arr2[i])
+    {
+      return false;
+    }
+  }
+  return true;
+};
 
 const eqObjects = function (object1, object2)
 {
@@ -17,7 +32,14 @@ const eqObjects = function (object1, object2)
   }
   for (const key of objectTwoKeys)
   {
-    if(!object1.hasOwnProperty(key) || object1[key] !== object2[key])
+    if(Array.isArray(object1[key]) && Array.isArray(object2[key]))
+    {
+      if(!eqArrays(object1[key], object2[key]))
+      {
+        return false;
+      }
+    }
+    else if(object1[key] !== object2[key])
     {
       return false;
     }
