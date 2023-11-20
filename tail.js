@@ -9,11 +9,4 @@ const tail = function(arr) {
   }
   return tailArr;
 };
-
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-console.log(tail(words)); // no need to capture the return value since we are not checking it
-console.log(tail([]));
-console.log(tail(["hello"]));
-console.log(words.length);
-assertEqual(tail(words).length, words.length - 1);
-assertEqual(words.length, 3);
+module.exports = tail;
