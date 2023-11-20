@@ -15,9 +15,9 @@ describe("head()", () => {
     assert.strictEqual(head([0]), 0);
   });
   it('return undefined for [,6,7]', () => {
-    assertEqual(head([,6,7]), undefined);
+    assert.strictEqual(head([,6,7]), undefined);
   });
   it('this should return hello from ["Hello", "Lighthouse", "Labs"]', () => {
-    assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+    assert.strictEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
   });
 })
