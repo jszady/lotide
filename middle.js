@@ -13,11 +13,6 @@ const middle = function (arr) {
   return [arr[Math.floor(arr.length/2)]];
 };
 
-console.log(eqArrays(middle([1,2,3]), [2]));
-console.log(eqArrays(middle([]), []));
-console.log(eqArrays(middle([1,2]), []));
-assertArraysEqual(middle([1,2,3]), [2]);
-assertArraysEqual(middle([1,2,3]), []);
-assertArraysEqual(middle([1,2]), []);
-assertArraysEqual(middle([]), []);
+module.exports = middle;
+
 
