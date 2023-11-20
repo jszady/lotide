@@ -17,5 +17,6 @@ const flatten = function (arr)
   }
   return newArr;
 };
+module.exports = flatten;
 
 flatten([1,2,3,[4,5],6]);
