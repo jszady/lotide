@@ -9,10 +9,10 @@ const assertEqual = require('../assertEqual.js');
 // assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 describe("head()", () => {
   it('this should return 5 from [5,6,7]', () => {
-    assert.strictEqual(assertEqual(head([5,6,7]), 5));
+    assert.strictEqual(head([5,6,7]), 5);
   });
   it('return 0 for [0]', () => {
-    assert.strictEqual(assertEqual(head([0]), 0));
+    assert.strictEqual(head([0]), 0);
   });
   it('return undefined for [,6,7]', () => {
     assertEqual(head([,6,7]), undefined);
