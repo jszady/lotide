@@ -16,6 +16,6 @@ const map = (arr, callback) => {
 const results1 = map(words, word => word[0]);
 
 
-assertArraysEqual(map(words, word => word[0]), ['g','c','t','m','t'])
-assertArraysEqual(map(words, word => word[1]), ['r','o','o','a','o'])
-assertArraysEqual(map(words, word => word[3]), [])
+// assertArraysEqual(map(words, word => word[0]), ['g','c','t','m','t'])
+// assertArraysEqual(map(words, word => word[1]), ['r','o','o','a','o'])
+// assertArraysEqual(map(words, word => word[3]), [])

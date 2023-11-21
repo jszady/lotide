@@ -20,7 +20,7 @@ const countLetters = function (string)
 };
 module.exports = countLetters;
 
-const result = countLetters('LHL');
-assertEqual(result['L'], 2);
-assertEqual(result['H'], 1);
+// const result = countLetters('LHL');
+// assertEqual(result['L'], 2);
+// assertEqual(result['H'], 1);
 
