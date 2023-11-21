@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@jszady/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "need mocha and chai",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"

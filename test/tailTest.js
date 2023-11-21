@@ -15,4 +15,4 @@ describe("tail()", () => {
   it("return ['am', 'john'] everything but the first element ['hello','am', 'john'],", () => {
     assert.deepEqual(tail(['hello','am','john']), ['am', 'john']);
   });
-})
+});
